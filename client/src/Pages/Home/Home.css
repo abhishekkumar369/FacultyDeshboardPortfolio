@@ -1,0 +1,435 @@
+/**********Header section**********/
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 25, 0.776), rgba(4, 9, 30, 0.7)),
+    url(./Images/AdminBldngPic2.webp);
+    position: relative;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text p {
+    color: #ef5327;
+}
+
+.header-text h1 {
+    font-size: 75px;
+}
+
+.header-text h2 {
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.header-btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ef5327;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    position: absolute;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.header-btn:hover {
+    background: #ef5327;
+
+}
+
+.vertical {
+    width: 0;
+    height: 120px;
+    margin: auto;
+}
+
+/**********About section**********/
+
+.about-section {
+    margin-top: 10px;
+    color: #ababab;
+}
+
+strong {
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.abt-col-1 {
+    flex-basis: 35%;
+}
+
+.abt-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.abt-col-2 {
+    flex-basis: 60%;
+}
+
+.abt-col-2 p {
+    line-height: 1.8;
+}
+
+.sub-header {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ef5327;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s
+}
+
+.tab-links.act-link::after {
+    width: 50%;
+}
+
+.tab-conts ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-conts ul li span {
+    color: #ef5327;
+    font-size: 14px;
+}
+
+.tab-conts{
+    display: none;
+}
+
+.tab-conts.act-tab {
+    display: block;
+}
+
+.resume {
+    text-align: center;
+}
+
+.btn.btncv {
+    display: inline-block;
+    background: #ef5327;
+}
+
+.tools, .grad, .briefcs {
+    font-size: 20px;
+}
+
+/**********Services section**********/
+
+.contact-header {
+    font-size: 60px;
+    color: white;
+}
+
+.services-section {
+    margin: 20px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+
+.service-box {
+    border-width: 0.5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 40px;
+    cursor: pointer;
+    transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+}
+
+.service-box:hover {
+    background-color: black;
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #ef5327;
+}
+
+.ser-icon {
+    text-align: center;
+    color: #ef5327;
+}
+
+.services-list div svg {
+    font-size:  50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services-list p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/**********Portfolio section**********/
+
+.portfolio-section {
+    margin: 30px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background:  rgba(0, 0, 0, 0.8);
+    border-radius: absolute;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    
+}
+
+.layer h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.layer strong {
+    
+}
+
+.layer a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background: #ef5327;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn { 
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ef5327;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #ef5327;
+}
+
+/**********Contact section**********/
+
+.contact-l {
+    flex-basis: 35%;
+}
+
+.contact-r {
+    flex-basis: 60%;
+}
+
+.contact-l p {
+    margin-top: 30px;
+}
+
+.contact-l p svg {
+    color: #ef5327;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social a:hover {
+    color: #ef5327;
+    transform: translateY(-5px);
+}
+
+.contact-r form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btncv {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.no-resize {
+    resize: none;
+}
+
+/**********Responsive section**********/
+
+@media screen and (max-width: 800px) {
+    .header-text {
+        margin-top: 100%;
+        font-size: 18px;
+        margin-right: 40px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text h2 {
+        margin-top: 20px;
+    }
+
+    .header-btn {
+        margin-top: 20px;
+    }
+
+    .sub-header, .contact-header {
+        font-size: 40px;
+    }
+
+    .abt-col-1, .abt-col-2 {
+        flex-basis: 100%;
+    }
+
+    .abt-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .abt-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-l, .contact-r {
+        flex-basis: 100%;
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+
+    .resume {
+        margin: 0 -60px;
+    }
+}

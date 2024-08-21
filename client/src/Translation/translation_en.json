@@ -1,0 +1,16 @@
+{
+  "header": {
+    "title": "Hi, I'm",
+    "name": "Andres Choque",
+    "subtitle": "Let's build solutions together.",
+    "headerbtnText": "Get started"
+  },
+  "about": {
+    "title": "Who am I",
+    "description": "Hi I'm Dr. Shyamosree Pal, an Assistant Professor at the Department of Computer Science and Engineering, National Institute of Technology Silchar. My research interests include Mathematical Imaging, Document Image Processing, Vectorization of Engineering Drawings, and Sensor Network Systems. I has a strong academic background, holding a Ph.D. from the Indian Institute of Technology Kharagpur. I am passionate about advancing the field of computer science and is committed to both research and teaching.",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "languages": "languages"
+  }
+}
